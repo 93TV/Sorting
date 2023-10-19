@@ -6,11 +6,12 @@
  */
 public class Helper {
 
-    private static int[] fillArray(int initLength) {
+    public static int[] fillArray(int initLength) {
         int[] initArray = new int[initLength];
         for (int i = 0; i < initLength; i++) {
-            initArray[i] = (int) (1 + Math.random() * 10000);
+            initArray[i] = (int) (1 + Math.random() * 1000000);
         }
         return initArray;
     }
+
 }
