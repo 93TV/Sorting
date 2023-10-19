@@ -51,7 +51,7 @@ public class Eindwerk implements Comparable<Eindwerk>{
 
     @Override
     public String toString() {
-        return  student + " " + titel;
+        return  student + " Eindwerk:" + titel + " Opleiding:" + opleiding;
     }
 
         @Override

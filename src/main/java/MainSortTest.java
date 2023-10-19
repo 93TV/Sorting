@@ -13,7 +13,7 @@ public class MainSortTest {
     QuickSort qs = new QuickSort();
 
     public static void main(String[] args) {
-        bs.sort();
+
     }
 
 }

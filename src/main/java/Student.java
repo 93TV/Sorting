@@ -36,7 +36,7 @@
 
     @Override
     public String toString() {
-        return familienaam + " " + familienaam;
+        return "Naam:" + voornaam + " " + familienaam;
     }
 
     @Override
