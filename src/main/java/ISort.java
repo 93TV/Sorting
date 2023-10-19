@@ -5,6 +5,6 @@
  * @version 19/10/2023
  */
 public interface ISort {
-    public void sort(int[] array);
-    public void printArray(int[] array);
+    void sort(int[] array);
+    void printArray(int[] array);
 }
