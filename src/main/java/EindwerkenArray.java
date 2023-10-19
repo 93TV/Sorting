@@ -20,12 +20,12 @@ public class EindwerkenArray {
     }
 
     public void leesBestand() throws IOException {
-        eindwerken = new Eindwerk[100];
+        eindwerken = new Eindwerk[1000000];
         File file = new File("src/main/java/eindwerken.txt");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         int i = 0;
-        while (br.readLine() != null && i < 10) {
+        while (br.readLine() != null && i < eindwerken.length) {
             String line = br.readLine();
             String[] sliced = line.split("\\$");
             Student student = new Student(sliced[0], sliced[1], Integer.parseInt(sliced[2]));
