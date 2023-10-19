@@ -1,5 +1,7 @@
+package SortingInteger;
+
 /**
- * Sorting : InsesrtionSort
+ * Sorting : SortingInteger.InsesrtionSort
  *
  * @author viaen
  * @version 19/10/2023

@@ -1,5 +1,7 @@
+package SortingInteger;
+
 /**
- * Sorting : Helper
+ * Sorting : SortingInteger.Helper
  *
  * @author viaen
  * @version 19/10/2023

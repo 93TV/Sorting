@@ -1,5 +1,7 @@
+package Eindwerken;
+
 /**
- * IEindwerkCollectie.java:Eindwerk
+ * Eindwerken.IEindwerkCollectie.java:Eindwerken.Eindwerk
  *
  * @author thibe
  * @version 28/09/2023
@@ -51,7 +53,7 @@ public class Eindwerk implements Comparable<Eindwerk>{
 
     @Override
     public String toString() {
-        return  student + " Eindwerk:" + titel + " Opleiding:" + opleiding;
+        return  student + " Eindwerken.Eindwerk:" + titel + " Opleiding:" + opleiding;
     }
 
         @Override

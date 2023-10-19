@@ -1,10 +1,14 @@
+package Eindwerken;
+
+import Eindwerken.Eindwerk;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Sorting : EindwerkenArray
+ * Sorting : Eindwerken.EindwerkenArray
  *
  * @author kiana
  * @version 19/10/2023
@@ -20,7 +24,7 @@ public class EindwerkenArray {
     }
 
     public void leesBestand() throws IOException {
-        eindwerken = new Eindwerk[10000];
+        eindwerken = new Eindwerk[1000000];
         File file = new File("src/main/java/eindwerken.txt");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);

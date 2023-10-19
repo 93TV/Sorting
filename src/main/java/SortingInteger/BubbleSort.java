@@ -1,19 +1,23 @@
+package SortingInteger;
+
 /**
- * Sorting : BubbleSortEindwerken
+ * Sorting : SortingInteger.BubbleSort
  *
- * @author kiana
+ * @author viaen
  * @version 19/10/2023
  */
-public class BubbleSortEindwerken implements ISortObject {
+public class BubbleSort implements ISort {
+
+
     @Override
-    public void sort(Comparable[] array) {
+    public void sort(int[] array) {
         int inputLength = array.length;
-        Comparable temp;
+        int temp;
         boolean swappdSomething = true;
         while (swappdSomething) {
             swappdSomething = false;
             for (int i = 0; i < inputLength - 1; i++) {
-                if (array[i].compareTo(array[i + 1]) == -1) {
+                if (array[i] > array[i + 1]) {
                     temp = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = temp;
@@ -24,11 +28,9 @@ public class BubbleSortEindwerken implements ISortObject {
     }
 
     @Override
-    public void printArray(Comparable[] array) {
+    public void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i].toString());
-
+            System.out.println(array[i]);
         }
     }
-
 }

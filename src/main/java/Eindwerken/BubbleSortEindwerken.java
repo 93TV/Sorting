@@ -1,21 +1,21 @@
+package Eindwerken;
+
 /**
- * Sorting : BubbleSort
+ * Sorting : Eindwerken.BubbleSortEindwerken
  *
- * @author viaen
+ * @author kiana
  * @version 19/10/2023
  */
-public class BubbleSort implements ISort {
-
-
+public class BubbleSortEindwerken implements ISortObject {
     @Override
-    public void sort(int[] array) {
+    public void sort(Comparable[] array) {
         int inputLength = array.length;
-        int temp;
+        Comparable temp;
         boolean swappdSomething = true;
         while (swappdSomething) {
             swappdSomething = false;
             for (int i = 0; i < inputLength - 1; i++) {
-                if (array[i] > array[i + 1]) {
+                if (array[i].compareTo(array[i + 1]) == -1) {
                     temp = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = temp;
@@ -26,9 +26,11 @@ public class BubbleSort implements ISort {
     }
 
     @Override
-    public void printArray(int[] array) {
+    public void printArray(Comparable[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+            System.out.println(array[i].toString());
+
         }
     }
+
 }
