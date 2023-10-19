@@ -9,7 +9,7 @@ import java.util.Random;
 public class QuickSort implements ISort{
     @Override
     public void sort(int[] array) {
-        sort(array, 0, array.length);
+        sort(array, 0, array.length-1);
     }
 
     public void sort(int[] inputArray, int lowIndex, int highIndex) {
