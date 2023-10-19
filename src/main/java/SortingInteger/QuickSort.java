@@ -1,7 +1,9 @@
+package SortingInteger;
+
 import java.util.Random;
 
 /**
- * Sorting : QuickSort
+ * Sorting : SortingInteger.QuickSort
  *
  * @author viaen
  * @version 19/10/2023

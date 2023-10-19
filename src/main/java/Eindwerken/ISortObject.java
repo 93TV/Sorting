@@ -1,8 +1,10 @@
+package Eindwerken;
+
 import java.util.SortedMap;
 import java.util.SortedSet;
 
 /**
- * Sorting : ISortObject
+ * Sorting : Eindwerken.ISortObject
  *
  * @author kiana
  * @version 19/10/2023

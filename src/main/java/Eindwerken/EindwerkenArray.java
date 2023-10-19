@@ -1,10 +1,14 @@
+package Eindwerken;
+
+import Eindwerken.Eindwerk;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Sorting : EindwerkenArray
+ * Sorting : Eindwerken.EindwerkenArray
  *
  * @author kiana
  * @version 19/10/2023

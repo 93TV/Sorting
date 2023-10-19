@@ -1,18 +1,20 @@
+package Eindwerken;
+
 /**
- * Sorting : InsesrtionSort
+ * Sorting : SortingInteger.InsesrtionSort
  *
  * @author viaen
  * @version 19/10/2023
  */
-public class InsesrtionSort implements ISort{
+public class InsesrtionSortEindwerken implements ISortObject {
     @Override
-    public void sort(int[] array) {
+    public void sort(Comparable[] array) {
         int inputLength = array.length;
 
         for (int i = 1; i < inputLength; i++) {
-            int currentValue = array[i];
+            Comparable currentValue = array[i];
             int j = i - 1;
-            while (j >= 0 && array[j] > currentValue) {
+            while (j >= 0 && array[j].compareTo(currentValue)<0) {
                 array[j + 1] = array[j];
                 j--;
             }
@@ -21,7 +23,7 @@ public class InsesrtionSort implements ISort{
     }
 
     @Override
-    public void printArray(int[] array) {
+    public void printArray(Comparable[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }

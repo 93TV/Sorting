@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+package SortingInteger;
 
 /**
- * Sorting : MainSortTest
+ * Sorting : SortingInteger.MainSortTest
  *
  * @author viaen
  * @version 19/10/2023
@@ -20,153 +17,153 @@ public class MainSortTest {
         MergeSort ms = new MergeSort();
         QuickSort qs = new QuickSort();
 //
-//        System.out.println("BubbleSort N : 10");
-//        int[] initArray = Helper.fillArray(10);
+//        System.out.println("SortingInteger.BubbleSort N : 10");
+//        int[] initArray = SortingInteger.Helper.fillArray(10);
 //        double start= System.currentTimeMillis();
 //        bs.sort(initArray);
 //        double end = System.currentTimeMillis();
 //        System.out.println(end - start);
 
         double start= System.currentTimeMillis();
-        Arrays.sort(Helper.fillArray(1000000));
+//        Arrays.sort(SortingInteger.Helper.fillArray(1000000));
         double end = System.currentTimeMillis();
-        System.out.println(end - start);
+//        System.out.println(end - start);
 
-//        System.out.println("BubbleSort N : 100");
+//        System.out.println("SortingInteger.BubbleSort N : 100");
 //        start= System.currentTimeMillis();
-//        bs.sort(Helper.fillArray(100));
+//        bs.sort(SortingInteger.Helper.fillArray(100));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("BubbleSort N : 1000");
+//        System.out.println("SortingInteger.BubbleSort N : 1000");
 //        start= System.currentTimeMillis();
-//        bs.sort(Helper.fillArray(1000));
+//        bs.sort(SortingInteger.Helper.fillArray(1000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 ////
-////        System.out.println("BubbleSort N : 10000");
+////        System.out.println("SortingInteger.BubbleSort N : 10000");
 ////        start= System.currentTimeMillis();
-////        bs.sort(Helper.fillArray(10000));
+////        bs.sort(SortingInteger.Helper.fillArray(10000));
 ////        end = System.currentTimeMillis();
 ////        System.out.println(end - start);
 ////
-////        System.out.println("BubbleSort N : 100000");
+////        System.out.println("SortingInteger.BubbleSort N : 100000");
 ////        start= System.currentTimeMillis();
-////        bs.sort(Helper.fillArray(100000));
+////        bs.sort(SortingInteger.Helper.fillArray(100000));
 ////        end = System.currentTimeMillis();
 ////        System.out.println(end - start);
 ////
-////        System.out.println("BubbleSort N : 1000000");
+////        System.out.println("SortingInteger.BubbleSort N : 1000000");
 ////        start= System.currentTimeMillis();
-////        bs.sort(Helper.fillArray(1000000));
+////        bs.sort(SortingInteger.Helper.fillArray(1000000));
 ////        end = System.currentTimeMillis();
 ////        System.out.println(end - start);
 //
 //        System.out.println("InsertionSort N : 10");
 //        start= System.currentTimeMillis();
-//        is.sort(Helper.fillArray(10));
+//        is.sort(SortingInteger.Helper.fillArray(10));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
 //        System.out.println("InsertionSort N : 100");
 //        start= System.currentTimeMillis();
-//        is.sort(Helper.fillArray(100));
+//        is.sort(SortingInteger.Helper.fillArray(100));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
 //        System.out.println("InsertionSort N : 1000");
 //        start= System.currentTimeMillis();
-//        is.sort(Helper.fillArray(1000));
+//        is.sort(SortingInteger.Helper.fillArray(1000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
 //        System.out.println("InsertionSort N : 10000");
 //        start= System.currentTimeMillis();
-//        is.sort(Helper.fillArray(10000));
+//        is.sort(SortingInteger.Helper.fillArray(10000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
 //        System.out.println("InsertionSort N : 100000");
 //        start= System.currentTimeMillis();
-//        is.sort(Helper.fillArray(100000));
+//        is.sort(SortingInteger.Helper.fillArray(100000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 ////
-////        System.out.println("InsertionSort N : 1000000");
-////        start= System.currentTimeMillis();
-////        is.sort(Helper.fillArray(1000000));
-////        end = System.currentTimeMillis();
-////        System.out.println(end - start);
+        System.out.println("InsertionSort N : 1000000");
+        start= System.currentTimeMillis();
+        is.sort(Helper.fillArray(1000000));
+        end = System.currentTimeMillis();
+        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 10");
+//        System.out.println("SortingInteger.MergeSort N : 10");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(10));
+//        ms.sort(SortingInteger.Helper.fillArray(10));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 100");
+//        System.out.println("SortingInteger.MergeSort N : 100");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(100));
+//        ms.sort(SortingInteger.Helper.fillArray(100));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 1000");
+//        System.out.println("SortingInteger.MergeSort N : 1000");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(1000));
+//        ms.sort(SortingInteger.Helper.fillArray(1000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 10000");
+//        System.out.println("SortingInteger.MergeSort N : 10000");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(10000));
+//        ms.sort(SortingInteger.Helper.fillArray(10000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 100000");
+//        System.out.println("SortingInteger.MergeSort N : 100000");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(100000));
+//        ms.sort(SortingInteger.Helper.fillArray(100000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("MergeSort N : 1000000");
+//        System.out.println("SortingInteger.MergeSort N : 1000000");
 //        start= System.currentTimeMillis();
-//        ms.sort(Helper.fillArray(1000000));
+//        ms.sort(SortingInteger.Helper.fillArray(1000000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 10");
+//        System.out.println("SortingInteger.QuickSort N : 10");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(10));
+//        qs.sort(SortingInteger.Helper.fillArray(10));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 100");
+//        System.out.println("SortingInteger.QuickSort N : 100");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(100));
+//        qs.sort(SortingInteger.Helper.fillArray(100));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 1000");
+//        System.out.println("SortingInteger.QuickSort N : 1000");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(1000));
+//        qs.sort(SortingInteger.Helper.fillArray(1000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 10000");
+//        System.out.println("SortingInteger.QuickSort N : 10000");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(10000));
+//        qs.sort(SortingInteger.Helper.fillArray(10000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 100000");
+//        System.out.println("SortingInteger.QuickSort N : 100000");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(100000));
+//        qs.sort(SortingInteger.Helper.fillArray(100000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 //
-//        System.out.println("QuickSort N : 1000000");
+//        System.out.println("SortingInteger.QuickSort N : 1000000");
 //        start= System.currentTimeMillis();
-//        qs.sort(Helper.fillArray(1000000));
+//        qs.sort(SortingInteger.Helper.fillArray(1000000));
 //        end = System.currentTimeMillis();
 //        System.out.println(end - start);
 

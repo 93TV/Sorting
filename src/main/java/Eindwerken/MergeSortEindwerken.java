@@ -1,13 +1,19 @@
+package Eindwerken;
+
+import Eindwerken.ISortObject;
+
 /**
- * Sorting : MergeSort
+ * Sorting : Eindwerken.MergeSortEindwerken
  *
- * @author viaen
- * @version 19/10/2023
+ * @author frede
+ * @version 10/19/2023
  */
-public class MergeSort implements ISort{
+public class MergeSortEindwerken implements ISortObject {
+
+
 
     @Override
-    public void sort(int[] array) {
+    public void sort(Comparable[] array) {
         int inputLength = array.length;
 
         if (inputLength < 2) {
@@ -16,8 +22,8 @@ public class MergeSort implements ISort{
 
         int leftSideLength = inputLength / 2;
         int rightSideLength = inputLength - leftSideLength;
-        int[] leftHalf = new int[leftSideLength];
-        int[] rightHalf = new int[rightSideLength];
+        Comparable[] leftHalf = new Comparable[leftSideLength];
+        Comparable[] rightHalf = new Comparable[rightSideLength];
 
 
         for (int i = 0; i < leftSideLength; i++) {
@@ -34,13 +40,13 @@ public class MergeSort implements ISort{
         merge(array, leftHalf, rightHalf);
     }
 
-    private static void merge(int[] inputArray, int[] leftHalf, int[] rightHalf) {
+    private static void merge(Comparable[] inputArray, Comparable[] leftHalf, Comparable[] rightHalf) {
         int leftSize = leftHalf.length;
         int rightSize = rightHalf.length;
         int i = 0, j = 0, k = 0;
 
         while (i < leftSize && j < rightSize) {
-            if (leftHalf[i] <= rightHalf[j]) {
+            if (leftHalf[i].compareTo(rightHalf[j]) > 0) {
                 inputArray[k] = leftHalf[i];
                 i++;
             } else {
@@ -62,9 +68,8 @@ public class MergeSort implements ISort{
             k++;
         }
     }
-
     @Override
-    public void printArray(int[] array) {
+    public void printArray(Comparable[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
