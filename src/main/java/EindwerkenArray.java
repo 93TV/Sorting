@@ -20,7 +20,7 @@ public class EindwerkenArray {
     }
 
     public void leesBestand() throws IOException {
-        eindwerken = new Eindwerk[10000];
+        eindwerken = new Eindwerk[100000];
         File file = new File("src/main/java/eindwerken.txt");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
