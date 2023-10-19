@@ -10,7 +10,7 @@ public class MainSortObjectTest {
     public static void main(String[] args) {
         EindwerkenArray arrEindwerken = new EindwerkenArray();
         BubbleSortEindwerken bubbleSort = new BubbleSortEindwerken();
-
+        InsesrtionSortEindwerken insertEind = new InsesrtionSortEindwerken();
 
         try {
             arrEindwerken.leesBestand();
@@ -18,10 +18,16 @@ public class MainSortObjectTest {
             throw new RuntimeException(e);
         }
         double start = System.currentTimeMillis();
+
         System.out.println("before");
-        bubbleSort.sort(arrEindwerken.getEindwerken());
+//        bubbleSort.printArray(arrEindwerken.getEindwerken());
+//        bubbleSort.sort(arrEindwerken.getEindwerken());
+            insertEind.sort(arrEindwerken.getEindwerken());
+
+
         System.out.println("After");
-        //bubbleSort.printArray(arrEindwerken.getEindwerken());
+//        bubbleSort.printArray(arrEindwerken.getEindwerken());
+
         double end = System.currentTimeMillis();
         System.out.println(end-start);
     }
