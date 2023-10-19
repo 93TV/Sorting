@@ -8,8 +8,8 @@ import java.util.SortedSet;
  * @version 19/10/2023
  */
 public interface ISortObject {
-    public void sort(Eindwerk[] eindwerken);
+    public void sort(Comparable[] array);
 
 
-    public void printArray(Eindwerk[] array);
+    public void printArray(Comparable[] array);
 }

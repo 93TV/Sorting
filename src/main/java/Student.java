@@ -41,10 +41,11 @@
 
     @Override
     public int compareTo(Student o) {
-        if ((this.familienaam.compareTo(o.getFamilienaam())) < 0) return -1;
-        else if ((this.familienaam.compareTo(o.getFamilienaam())) > 0) return 1;
-        else if ((this.voornaam.compareTo(o.getVoornaam())) < 0) return -1;
+        if ((this.voornaam.compareTo(o.getVoornaam())) < 0) return -1;
         else if ((this.voornaam.compareTo(o.getVoornaam())) > 0) return 1;
+        else if ((this.familienaam.compareTo(o.getFamilienaam())) < 0) return -1;
+        else if ((this.familienaam.compareTo(o.getFamilienaam())) > 0) return 1;
+
         return 0;
     }
 }

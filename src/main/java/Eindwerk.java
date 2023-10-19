@@ -56,10 +56,10 @@ public class Eindwerk implements Comparable<Eindwerk>{
 
         @Override
     public int compareTo(Eindwerk o) {
-        if (this.student.compareTo(o.getStudent()) < 0) return -1;
-        else if (this.student.compareTo(o.getStudent()) > 0) return 1;
-        else if (this.student.getStudentennummer() < o.getStudent().getStudentennummer()) return -1;
-        else if (this.student.getStudentennummer() > o.getStudent().getStudentennummer()) return 1;
+        if (this.student.compareTo(o.getStudent()) < 0) return 1;
+        else if (this.student.compareTo(o.getStudent()) > 0) return -1;
+        else if (this.getTitel().compareTo(o.getTitel()) < 0) return -1;
+        else if (this.getTitel().compareTo(o.getTitel()) > 0) return 1;
         return 0;
     }
 }

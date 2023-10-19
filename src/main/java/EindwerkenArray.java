@@ -9,7 +9,7 @@ import java.io.IOException;
  * @author kiana
  * @version 19/10/2023
  */
-public class EindwerkenArray implements ISortObject {
+public class EindwerkenArray {
     private Eindwerk[] eindwerken;
     public Eindwerk[] getEindwerken() {
         return eindwerken;
@@ -20,7 +20,7 @@ public class EindwerkenArray implements ISortObject {
     }
 
     public void leesBestand() throws IOException {
-        eindwerken = new Eindwerk[10];
+        eindwerken = new Eindwerk[100];
         File file = new File("src/main/java/eindwerken.txt");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
@@ -35,32 +35,5 @@ public class EindwerkenArray implements ISortObject {
         }
     }
 
-    @Override
-    public void sort(Eindwerk[] eindwerken) {
-
-    }
-
-    @Override
-    public void printArray(Eindwerk[] array) {
-        for (int i = 0; i < eindwerken.length; i++) {
-            System.out.println(eindwerken[i].toString());
-
-        }
-
-    }
-
-    public static void main(String[] args) throws IOException {
-        EindwerkenArray arrEindwerken = new EindwerkenArray();
-        try {
-            arrEindwerken.leesBestand();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        arrEindwerken.printArray(arrEindwerken.getEindwerken());
-
-
-
-
-    }
 
 }
